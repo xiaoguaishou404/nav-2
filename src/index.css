@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* img{
+  width: 100%;
+  height: 100%; 
+  max-width: 100%;
+  max-height: 100%;
+}*/
+
+body {
+  background-image: linear-gradient(to right, #e9fffe, #45a3c9);
+}
+
+.globalHeader {
+  /* border: 1px solid red; */
+  margin: 20px;
+}
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 70px 0 80px;
+  }
+}
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .searchForm {
+    max-width: 800px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .siteList {
+    margin: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.searchForm > input {
+  width: 100%;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.searchForm > button {
+  white-space: nowrap;
+  padding: 0 28px;
+  border: none;
+  border-radius: 4px;
+  background: #0282b9;
+  color: white;
+  font-size: 16px;
+}
+.globalMain {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.siteList {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+@media (min-width: 500px) {
+  .siteList {
+    margin: 0px;
+    margin-left: 0;
+    margin-right: -50px;
+    justify-content: flex-start;
+  }
+}
+.siteList > li {
+  margin-bottom: 10px;
+}
+@media (min-width: 500px) {
+  .siteList > li {
+    margin-right: 50px;
+  }
+}
+.siteList .site {
+  /* border: 1px solid red; */
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+  background-color: #efeeee;
+  box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2),
+    -18px -18px 30px rgba(255, 255, 255, 0.5);
+}
+.siteList .site:hover{
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1),
+  0px 0px 0px rgb(255, 255, 255),
+  inset 30px 30px 30px rgba(0,0,0,0.1),
+  inset -30px -30px 30px rgba(255,255,255,1);
+  transition: box-shadow .2s ease-out;
+}
+
+.siteList .site > .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}
+.siteList .site .logo:hover{
+  font-size: 90px;
+  color: rgb(43, 123, 189);
+  transition: font-size .2s ease-out;
+}
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.siteList .site > .link:hover{
+  font-size: 20px;
+  transition: font-size .2s ease-out;
+}
+.siteList .site > .close {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  display: none;
+}
+.siteList .site:hover > .close {
+  display: block;
+  cursor: default;
+  
+}
+
+.siteList .site:hover > .close:hover{
+  font-size: 40px;
+  transition: font-size .2s ease-out;
+}
+
+
+.siteList .addButton {
+  border: 1px solid #ddd;
+  background: white;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.siteList .addButton .icon {
+  width: 56px;
+  height: 56px;
+}
+.siteList .addButton .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.siteList .addButton .icon-wrapper {
+  /* border: 1px solid red; */
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
