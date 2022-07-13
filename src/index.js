@@ -6,13 +6,13 @@ const hashMap = xObject || [
   { logo: 'Q', url: 'https://www.qq.com/' },
   { logo: 'W', url: 'https://www.weixin.qq.com/' },
   { logo: 'C', url: 'https://css-tricks.com/' },
-   { logo: 'T', url: 'https://www.acfun.cn/' },
+  { logo: 'T', url: 'https://www.acfun.cn/' },
   { logo: 'G', url: 'https://www.github.com/' },
-   { logo: 'S', url: 'https://codesandbox.io/' }, 
-   { logo: 'M', url: 'developer.mozilla.org' },
+  { logo: 'S', url: 'https://codesandbox.io/' },
+  { logo: 'M', url: 'developer.mozilla.org' },
   { logo: 'F', url: '键盘F未添加' },
-   { logo: 'G', url: '键盘G未添加' },
-  { logo: 'Z', url: '键盘Z未添加' }, 
+  { logo: 'G', url: '键盘G未添加' },
+  { logo: 'Z', url: '键盘Z未添加' },
   { logo: 'X', url: '键盘X未添加' },
   { logo: 'C', url: '键盘C未添加' }
 ];
